@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Campgrounds</title>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Campgrounds</h1>
+        <form onsubmit="return false" id="formCamp">
+            <label>Criteria:</label>
+            <input type="checkbox" id="waterfallTest" name="waterfallCheck" value="waterfall"><label for="waterfallTest">Waterfall</label>
+            <input type="checkbox" id="easyTest" name="easyCheck" value="easy"><label for="easyTest">Easy</label>
+        </form>
+        <button id="searchFilter" type="button">Search</button>
+        <button id="clearFilter" type="button" style="display:none">Clear Results</button>
+        <div id="test" class="cardsList"></div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+</body>
+
+</html>
